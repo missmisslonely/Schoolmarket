@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_publish1" />
+
+    <ScrollView
+        android:id="@+id/activity_selectimg_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eef1eff5" >
+
+                <HorizontalScrollView
+                    android:id="@+id/selectimg_horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <GridView
+                            android:id="@+id/noScrollgridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="86dp"
+                            android:fastScrollEnabled="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:numColumns="3"
+                            android:scrollbars="none"
+                            android:scrollingCache="false"
+                            android:stretchMode="spacingWidthUniform"
+                            android:verticalSpacing="1dp" >
+                        </GridView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/buleline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="物品名称"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/goods_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/autocompletetextview_selector"
+                    android:focusable="true"
+                    android:hint="输入您的物品名称"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="#6F6F6F"
+                    android:textColorHint="#b9b9b9" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/buleline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="物品类别"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/buleline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="物品描述"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/goods_describe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/autocompletetextview_selector"
+                    android:gravity="left|top"
+                    android:maxLength="30"
+                    android:hint="请描述物品的基本信息，如：购买时间，新旧程度，物品功能，有无瑕疵，能否议价等信息。"
+                    android:textColor="#6F6F6F"
+                    android:textColorHint="#b9b9b9" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/buleline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="价格"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/goods_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/autocompletetextview_selector"
+                    android:hint="元"
+                    android:maxLength="6"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="#6F6F6F"
+                    android:textColorHint="#b9b9b9" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/buleline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="联系方式"
+                        android:textSize="20dip" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/goods_connect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/autocompletetextview_selector"
+                    android:hint="这个信息很重要哦！"
+                    android:maxLength="11"
+                    android:numeric="decimal"
+                    android:singleLine="true"
+                    android:textColor="#6F6F6F"
+                    android:textColorHint="#b9b9b9" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

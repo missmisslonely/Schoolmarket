@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/brown"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:background="#30b0e2"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="7"
+            android:background="@drawable/editshape"
+            android:drawableLeft="@drawable/search"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入名称"
+            android:singleLine="true"
+            android:textColor="#000" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#30b0e2"
+            android:clickable="false"
+            android:onClick="Search"
+            android:text="搜索"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <com.miss.schoolmarket2.view.XListView
+        android:id="@+id/activity_search_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#f0f0f0"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/grideview_selector" >
+    </com.miss.schoolmarket2.view.XListView>
+
+</LinearLayout>

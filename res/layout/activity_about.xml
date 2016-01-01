@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#5cc9fc"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/myaboutback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_press"
+            android:clickable="true"
+            android:onClick="AboutBack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="关于"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/liner1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/kaifaperson"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/marketqr" />
+
+            <TextView
+                android:id="@+id/developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kaifaperson"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="25sp"
+                android:text="开发者"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/liner2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/developer"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/developerEdit"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="XuptMarket团队"
+                    android:textColor="#00008B"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/developdepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liner2"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="10sp"
+                android:text="开发单位"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/liner3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/developdepart"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="5sp" >
+
+                <TextView
+                    android:id="@+id/developdepartEdit"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="3G实验室"
+                    android:textColor="#00008B"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/serviceTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liner3"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="10sp"
+                android:text="客服电话"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/liner4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serviceTel"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/serviceTelEdit"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="18220878361"
+                    android:textColor="#00008B"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liner4"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="10sp"
+                android:text="邮箱"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/liner5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/emailEdit"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:text="missmisslonely@outlook.com"
+                    android:textColor="#00008B"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

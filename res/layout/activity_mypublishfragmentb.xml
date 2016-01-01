@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0" >
+
+    <TextView
+        android:id="@+id/mypublishnull_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="您还没有发布消息"
+        android:textColor="#9e9e9e"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/mypublishnull_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mypublishnull_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/denlubackpress"
+        android:onClick="mypublish"
+        android:text="现在发布"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>

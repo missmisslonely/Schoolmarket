@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#e9e9e9"
+            android:baselineAligned="false"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:id="@+id/ll_recom"
+                style="@style/home_tab_linear" >
+
+                <ImageView
+                    android:id="@+id/xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_xinxi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cate"
+                style="@style/home_tab_linear" >
+
+                <ImageView
+                    android:id="@+id/fabu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_fabu" />
+            </LinearLayout>
+
+          
+
+            <LinearLayout
+                android:id="@+id/ll_my"
+                style="@style/home_tab_linear" >
+
+                <ImageView
+                    android:id="@+id/wode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/home_wode" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>
